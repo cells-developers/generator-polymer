@@ -133,8 +133,6 @@ module.exports = yeoman.generators.Base.extend({
     if (this.includeWCT) {
       this.copy('test/index.html', 'test/index.html', renameElement);
       this.copy('test/basic-test.html', 'test/basic-test.html', renameElement);
-      this.copy('test/check-value-test.html', 'test/check-value-test.html', renameElement);
-      this.copy('test/functions-test.html', 'test/functions-test.html', renameElement);
     }
 
     if (this.i18n) {
