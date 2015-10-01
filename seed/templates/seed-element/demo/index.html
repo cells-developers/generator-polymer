@@ -25,18 +25,14 @@
         height: 100%;
       }
     </style>
+<% if (i18n) { %>
+    <script type="text/javascript">
+      document.documentElement.lang = 'en';
+    </script>
+    <script src="js/I18nMsg.js"></script>
+<% } %>
   </head>
   <body>
     <seed-element welcome='{"title": "Welcome to Cells", "image": "../images/cells.svg"}'></seed-element>
-    <script>
-      <% if (i18n) { %>
-        document.documentElement.lang = 'en';
-        document.addEventListener('HTMLImportsLoaded', function() {
-          // fallback language is english
-          I18nMsg.lang = document.documentElement.lang;
-          I18nMsg.url = '../locales';
-        });
-      <% } %>
-    </script>
   </body>
 </html>
