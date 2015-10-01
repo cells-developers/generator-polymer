@@ -8,6 +8,7 @@
  },
  "devDependencies":{
    "cells-sass":"https://descinet.bbva.es/stash/scm/cel/cells-sass.git",
+   "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
    "web-component-tester": "^3.0.0"
  },
  "main": "seed-element.html"
