@@ -137,7 +137,7 @@ module.exports = yeoman.generators.Base.extend({
 
     if (this.i18n) {
       this.copy('locales/en.json', 'locales/en.json', renameElement);
-      this.copy('demo/I18nMsg.js', 'demo/I18nMsg.js', renameElement);
+      this.copy('demo/js/I18nMsg.js', 'demo/I18nMsg.js', renameElement);
     }
   },
   install: function () {
